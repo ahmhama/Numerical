@@ -1,0 +1,300 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #e0e0e0 !important;
+}
+
+/*============================ header ============================*/
+
+header nav {
+	background-color: #161616 !important;
+	padding: 15px 0px !important;
+	width: 100%;
+	height: 100%;
+}
+
+.navbar-nav .dropdown-menu {
+	background-color: #1d1d1d !important;
+}
+
+.navbar-nav .dropdown-menu a:hover {
+	background-color: #2e2c2c !important;
+}
+
+nav a {
+	color: #FFFFFF !important;
+	font-weight: 600;
+}
+
+nav .active, .dropdown-menu .active {
+	color: #CD5F3A !important;
+	background-color: transparent !important;
+}
+
+/*============================ header ============================*/
+
+/*============================ main ============================*/
+
+.main {
+	display: flex;
+	align-items: center;
+	height: calc(100vh - 70px);
+}
+
+/*============================ button ============================*/
+
+.main a.animated-button:link, .main a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #161616;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.main a.animated-button:link:after, .main a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 50%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+
+.main a.animated-button:link:hover, .main a.animated-button:visited:hover {
+	color: #161616;
+	text-shadow: none;
+}
+
+.main a.animated-button:link:hover:after, .main a.animated-button:visited:hover:after {
+	height: 450%;
+}
+
+.main a.animated-button:link, .main a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #161616;
+	font-size: 14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.main a.animated-button.sandy-two {
+	border: 2px solid #838386;
+	color: #161616;
+}
+
+.main a.animated-button.sandy-two:after {
+	border: 2px solid #686869;
+	opacity: 0;
+	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+
+.main a.animated-button.sandy-two:hover:after {
+	height: 1000% !important;
+	opacity: 1;
+	color: #161616;
+}
+
+/*============================ button ============================*/
+
+/*============================ main ============================*/
+
+.bisection, .false, .fixed, .newton, .secant {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	margin-top: 70px;
+}
+
+.matheditor-wrapper-mathfield {
+	display: flex;
+	flex-direction: column;
+	align-items: center !important;
+	justify-content: center !important;
+	text-align: center;
+	min-width: 100% !important;
+	max-width: 300px !important;
+}
+
+.matheditor-wrapper-mathfield div {
+	display: flex;
+	max-width: 300px !important;
+	justify-content: center !important;
+}
+
+table {
+	width: 100%;
+}
+
+.input_faild td {
+	width: 50%;
+	margin: 10px;
+	padding: 10px 20px;
+}
+
+.input_faild td label {
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.input_faild td input {
+	width: 100%;
+	padding: 3px 10px;
+	border-radius: 5px;
+	border: 1px solid #000;
+}
+
+#demo, .clearbtn {
+	width: 230px;
+	height: 45px;
+	border-radius: 3px;
+	outline: none;
+	background-color: #161616;
+	color: #fff;
+	border: none;
+	margin-left: 15px;
+}
+
+.output, .output th, .output td {
+	border: 1px solid #000;
+	margin: 3px;
+	padding: 0.75em 1em 0.75em 1em;
+	text-align: center;
+}
+
+.out_table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#root {
+	color: rgb(16, 204, 47);
+}
+
+.root {
+	padding: 10px 15px;
+	font-weight: 700;
+}
+
+input {
+	outline: none;
+	border: 1px solid #ccc !important;
+	padding: 7px 14px 9px !important;
+	transition: 0.4s !important;
+}
+
+/*============================ Gauss ============================*/
+
+#brackts {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center !important;
+	text-align: center !important;
+}
+
+.tableInput {
+	width: 100px;
+}
+
+.tableInput tr {
+	width: 100px !important;
+}
+
+.tableInput td {
+	margin: 10px !important;
+	padding: 10px !important;
+	width: 100px;
+}
+
+.tableInput input {
+	width: 100px;
+	padding: 0;
+	margin: 0%;
+}
+
+.clearbtn {
+	margin-top: 20px;
+}
+
+.brackts {
+	width: auto;
+	border: 2px solid #555555;
+	display: inline-block;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-radius: 10px/40px;
+	margin-bottom: 20px !important;
+}
+
+#outresult .brackts td {
+	margin: 20px !important;
+	padding: 10px !important;
+}
+
+@media (max-width: 575px) {
+	.main {
+		height: 100%;
+		margin: 20px 0px;
+	}
+	header nav {
+		height: 100% !important;
+	}
+	.matheditor-wrapper-mathfield {
+		min-width: 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.output, .output th, .output td {
+		border: 1px solid #000;
+		margin: 0px;
+		padding: 6px;
+		font-size: 11px;
+	}
+}
